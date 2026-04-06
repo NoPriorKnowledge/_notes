@@ -1,0 +1,17 @@
+name: Notify main site
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger rebuild
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.PAGES_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/nopriorknowledge/nopriorknowledge.github.io/dispatches \
+            -d '{"event_type": "notes-updated"}'
