@@ -8,4 +8,4 @@ notes: https://sinatootoonian.com/index.php/2026/03/08/deep-linear-networks-lear
 notebook: https://colab.research.google.com/drive/1nZuOATDCmQWwxS6jGtive3E0IKqIDE-t?usp=sharing
 ---
 
-Contenu de la note ici...
+Here is some bla
